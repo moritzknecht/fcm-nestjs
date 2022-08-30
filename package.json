@@ -2,7 +2,7 @@
   "name": "@doracoder/fcm-nestjs",
   "version": "0.5.0",
   "description": "NestJS npm package starter",
-  "author": "Quy Tran <tranphuquy19@gmail.com>",
+  "author": "Moritz Knecht <moritz.knecht83@gmail.com>",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -28,10 +28,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tranphuquy19/fcm-nestjs.git"
+    "url": "git+https://github.com/moritzknecht/fcm-nestjs.git"
   },
   "bugs": {
-    "url": "https://github.com/tranphuquy19/fcm-nestjs"
+    "url": "https://github.com/moritzknecht/fcm-nestjs"
   },
   "peerDependencies": {
     "@nestjs/common": "^8.0.6"
@@ -42,14 +42,14 @@
     "rxjs": "^7.3.0"
   },
   "devDependencies": {
-    "@nestjs/common": "8.0.6",
+    "@nestjs/common": "^8.0.6",
     "@nestjs/core": "^8.0.6",
     "@nestjs/platform-express": "^8.0.6",
-    "@nestjs/testing": "8.0.6",
-    "@types/express": "4.17.13",
-    "@types/jest": "27.0.2",
-    "@types/node": "16.9.4",
-    "@types/supertest": "2.0.11",
+    "@nestjs/testing": "^8.0.6",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.9.4",
+    "@types/supertest": "^2.0.11",
     "jest": "27.2.1",
     "prettier": "2.4.1",
     "supertest": "6.1.6",
@@ -74,5 +74,5 @@
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
   },
-  "homepage": "https://github.com/tranphuquy19/nestjs-fcm#readme"
+  "homepage": "https://github.com/moritzknecht/nestjs-fcm#readme"
 }
