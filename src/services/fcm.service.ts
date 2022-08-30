@@ -11,11 +11,15 @@ export class FcmService {
     private readonly logger: Logger,
   ) {
     if (firebaseAdmin.apps.length === 0) {
-      firebaseAdmin.initializeApp({
+      let options = {
         credential: firebaseAdmin.credential.cert(
           this.fcmOptionsProvider.firebaseSpecsPath,
-        ),
-      });
+        )
+      }
+      if (this.fcmOptionsProvider.httpAgent) {
+       options.httpAgent = this.fcmOptionsProvider.httpAgent;
+      }   
+      firebaseAdmin.initializeApp(options);
     }
   }
 
