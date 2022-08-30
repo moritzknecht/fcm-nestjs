@@ -17,7 +17,8 @@ export class FcmService {
         )
       };
       if (this.fcmOptionsProvider.httpAgent) {
-       options.credential.httpAgent = this.fcmOptionsProvider.httpAgent;
+        options.httpAgent = this.fcmOptionsProvider.httpAgent;
+        options.credential.httpAgent = this.fcmOptionsProvider.httpAgent;
       }   
       firebaseAdmin.initializeApp(options);
     }
