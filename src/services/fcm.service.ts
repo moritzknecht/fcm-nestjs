@@ -20,7 +20,13 @@ export class FcmService {
       if (this.fcmOptionsProvider.httpAgent) {
         options.httpAgent = this.fcmOptionsProvider.httpAgent;
       }   
-      firebaseAdmin.initializeApp(options);
+      console.log('options',options)
+      try {
+         firebaseAdmin.initializeApp(options);
+      }
+      catch(err) {
+        console.log('err', err)
+      }
     }
   }
 
