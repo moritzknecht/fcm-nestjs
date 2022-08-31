@@ -14,6 +14,7 @@ export class FcmService {
       let options: any = {
         credential: firebaseAdmin.credential.cert(
           this.fcmOptionsProvider.firebaseSpecsPath,
+          this.fcmOptionsProvider.httpAgent
         )
       };
       if (this.fcmOptionsProvider.httpAgent) {
