@@ -1,6 +1,6 @@
 {
   "name": "@doracoder/fcm-nestjs",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "NestJS npm package starter",
   "author": "Moritz Knecht <moritz.knecht83@gmail.com>",
   "license": "MIT",
